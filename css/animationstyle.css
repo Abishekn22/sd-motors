@@ -1,0 +1,82 @@
+/* Base Hidden State */
+.hiddens {
+  opacity: 0;
+  transform: translateX(100px); /* Start off-screen to the right */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Fade-In & Slide Left */
+.visible {
+  opacity: 1;
+  transform: translateX(0); /* Slide into view */
+}
+
+/* Fade-Out & Slide Down */
+.out {
+  opacity: 0;
+  transform: translateY(50px); /* Slide down */
+}
+
+/* Bounce-In Animation */
+.bounce-in {
+  opacity: 0;
+  transform: scale(0.8);
+  animation: bounceIn 1s ease forwards;
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Rotate-In Animation */
+.rotate-in {
+  opacity: 0;
+  transform: rotate(-90deg);
+  animation: rotateIn 1s ease forwards;
+}
+
+@keyframes rotateIn {
+  0% {
+    opacity: 0;
+    transform: rotate(-90deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+}
+
+/* Scale-In Animation */
+.scale-in {
+  opacity: 0;
+  transform: scale(0.5);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.scale-in.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Slide-Up Animation */
+.slide-up {
+  opacity: 0;
+  transform: translateY(-50px); /* Start off-screen below */
+  transition: opacity 0.8s ease-out, transform 2s ease-out;
+}
+
+.slide-up.visible {
+  opacity: 1;
+  transform: translateY(0); /* Slide into view */
+}

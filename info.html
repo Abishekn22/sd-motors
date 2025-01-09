@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>SD Motors</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/particals.css">
+    <link rel="stylesheet" href="/css/animationstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+  <header class="fixed top-0 left-0 right-0 rounded-full bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 py-4 px-8 flex items-center justify-between mt-2 z-50 transform-gpu duration-500 ease-in-out  ">
+    <div class="logo text-white text-2xl font-bold">SD MOTORS</div>
+    <nav class="flex items-center">
+      <!-- Links for Desktop View -->
+      <ul class="hidden md:flex space-x-4">
+        <li><a href="/" class="text-white hover:text-gray-300">Home</a></li>
+        <li><a href="/info.html" class="text-white hover:text-gray-300">Info</a></li>
+        <li><a href="/contact.html" class="text-white hover:text-gray-300">Contact</a></li>
+      </ul>
+      
+      <!-- Hamburger Button for Mobile View -->
+      <button id="hamburger-btn" class="md:hidden focus:outline-none flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" fill="white">
+          <path d="M0 0h24v24H0z" fill="none" />
+          <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+        </svg>
+      </button>
+    </nav>
+  </header>
+  
+  <!-- Sidebar Menu -->
+<div id="sidebar" class="fixed top-0 right-0 h-screen w-64 bg-gray-900 transform translate-x-full transition-transform duration-300 ease-in-out z-50 overflow-y-auto">
+    <button id="close-btn" class="absolute top-4 left-4 text-white focus:outline-none">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" fill="white">
+        <path d="M0 0h24v24H0z" fill="none" />
+        <path d="M18.3 5.71a1 1 0 0 0-1.41 0L12 10.59 7.11 5.7a1 1 0 0 0-1.41 1.42L10.59 12l-4.89 4.89a1 1 0 0 0 1.41 1.41L12 13.41l4.89 4.89a1 1 0 0 0 1.41-1.41L13.41 12l4.89-4.89a1 1 0 0 0 0-1.42z" />
+      </svg>
+    </button>
+    <ul class="flex flex-col mt-16 space-y-4 px-4">
+      <li><a href="/" class="block text-white py-2 px-4 hover:text-gray-200 bg-gray-800 rounded">Home</a></li>
+      <li><a href="/info.html" class="block text-white py-2 px-4 hover:text-gray-300 bg-gray-600 rounded">Info</a></li>
+      <li><a href="contact.html" class="block text-white py-2 px-4 hover:text-gray-300 bg-gray-800 rounded">Contact</a></li>
+    </ul>
+    <div class="mt-auto px-4 py-8">
+      <!-- Ads Banner -->
+       <h3 class="text-white font-bold p-2">!Offer for you</h3>
+      <a href="#">
+        <img src="/images/garage car2.webp" alt="car mechanics near me " class="rounded-lg">
+      </a>
+    </div>
+    <div class="mt-4 px-4">
+      <h3 class="text-white text-lg font-medium mb-2">Contact Us</h3>
+      
+        <a href="/contact.html" type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+          Enquery 
+        </a>
+       
+     
+    </div>
+  </div>
+
+  <div class="bg-[url('https://images.pexels.com/photos/12185933/pexels-photo-12185933.jpeg')] bg-cover bg-center h-screen flex flex-col justify-center items-center text-center px-10">
+  <h1 class="text-transparent text-8xl font-extrabold bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 mb-4">About Us</h1>
+  <p class="text-white text-2xl mb-6">Welcome to SD Motors Workshop, your trusted partner for all your automotive needs.</p>
+  <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+    Contact Now
+  </button>
+</div>
+
+<!--main body-->
+<section class="bg-gray-100 py-12">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2 mb-8 md:mb-0">
+        <img src="https://img.freepik.com/premium-photo/professional-auto-mechanic-performing-engine-diagnostics-repair-car-workshop_1293074-26039.jpg" alt="SD Motors Workshop" class="rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
+      </div>
+      <div class="md:w-1/2 md:pl-8">
+        <h2 class="text-3xl font-bold mb-4 text-gray-800">About SD Motors Workshop</h2>
+        <p class="text-gray-700 leading-relaxed mb-6">
+          Welcome to SD Motors Workshop, your trusted partner for all your automotive needs. With years of experience in the industry, our team of skilled technicians is dedicated to providing top-notch service and ensuring your vehicle is in peak condition. We use only the highest quality parts and equipment, and our work is always guaranteed. 
+        </p>
+        <p class="text-gray-700 leading-relaxed mb-6">
+          At SD Motors, we understand that your car is a valuable asset. That's why we treat every vehicle with the utmost care and respect. Our commitment to customer satisfaction is second to none, and we're always happy to answer any questions you may have.
+        </p>
+        <h3 class="text-xl font-semibold mb-2 text-gray-800">We specialize in:</h3>
+        <ul class="list-disc list-inside pl-6">
+          <li class="mb-2">Routine Maintenance</li>
+          <li class="mb-2">Engine Repair</li>
+          <li class="mb-2">Brake Service</li>
+          <li class="mb-2">Electrical Diagnostics</li>
+          <li class="mb-2">Tire and Wheel Services</li>
+          <li class="mb-2">Air Conditioning Repair</li>
+          <li class="mb-2">Transmission Service</li>
+        </ul>
+        <a href="#" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mt-6 inline-block">Learn More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-12 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-8 text-center text-gray-800">Our Work</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div class="transform transition duration-500 hover:scale-105">
+        <img src="https://certifiedfleetservices.com/wp-content/uploads/2023/08/Picture-of-an-engine-out-of-its-chassis-scaled.jpg" alt="nearby car mechanics near me
+        " class="rounded-lg shadow-lg">
+        <div class="bg-white p-4 rounded-b-lg shadow-md">
+          <h3 class="text-lg font-semibold mb-2 text-gray-800">Engine Overhaul</h3>
+          <p class="text-gray-600 text-sm">Complete engine rebuild for improved performance and reliability.</p>
+        </div>
+      </div>
+      <div class="transform transition duration-500 hover:scale-105">
+        <img src="https://etypeuk.com/media/20688/dsc_5455.jpg?anchor=center&mode=crop&width=705&height=450&meta=false&rnd=133269748650000000" alt="cheap car mechanics near me
+        " class="rounded-lg shadow-lg">
+        <div class="bg-white p-4 rounded-b-lg shadow-md">
+          <h3 class="text-lg font-semibold mb-2 text-gray-800">Brake System Upgrade</h3>
+          <p class="text-gray-600 text-sm">Upgraded brake calipers and rotors for enhanced stopping power.</p>
+        </div>
+      </div>
+      <div class="transform transition duration-500 hover:scale-105">
+        <img src="https://boyceautorepair.com/wp-content/uploads/2021/07/BOY-Blog-How-Much-Does-a-Custom-Exhaust-System-Cost.jpg" alt="Project 3" class="rounded-lg shadow-lg">
+        <div class="bg-white p-4 rounded-b-lg shadow-md">
+          <h3 class="text-lg font-semibold mb-2 text-gray-800">Custom Exhaust System</h3>
+          <p class="text-gray-600 text-sm">Designed and installed a custom exhaust system for improved sound and performance.</p>
+        </div>
+      </div>
+      <div class="transform transition duration-500 hover:scale-105">
+        <img src="https://cdn-0.motocrossactionmag.com/wp-content/uploads/2018/01/forks-showa-akit14.jpeg" alt="Project 4" class="rounded-lg shadow-lg">
+        <div class="bg-white p-4 rounded-b-lg shadow-md">
+          <h3 class="text-lg font-semibold mb-2 text-gray-800">Suspension Tuning</h3>
+          <p class="text-gray-600 text-sm">Fine-tuned the suspension for a smoother ride and better handling.</p>
+        </div>
+      </div>
+    </div>
+  </div>  
+</section>
+ 
+<!--main body end-->
+
+
+
+<!--Contact us form section-->
+<section class="hiddens bg-gradient-to-r from-black to-black min-h-screen flex items-center justify-center m-0 rounded-2xl">
+    <div class="w-full mx-auto p-4 rounded-lg shadow-lg grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-8 md:p-8  bg-black md:bg-transparent">
+      <div class="text-white mx-4 md:mx-40 my-4 md:my-40 bg-gradient-to-r from-gray-800 to-gray-900 p-5 rounded-2xl">
+        <h1 class="text-4xl font-bold mb-6 text-center">Contact Us</h1> 
+        <form class="w-full max-w-md" action="send_mail.php" method="POST" > 
+          <div class="mb-4">
+            <label for="name" class="block text-sm font-bold mb-2">Name:</label>
+            <input type="text" id="name" name="name" required
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline bg-transparent" />
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block text-sm font-bold mb-2">Email:</label>
+            <input type="email" id="email" name="email" required
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline bg-transparent" />
+          </div>
+          <div class="mb-4">
+            <label for="phone" class="block text-sm font-bold mb-2">Phone:</label>
+            <input type="number" id="phone" name="phone" required
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline bg-transparent" />
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block text-sm font-bold mb-2">Message:</label>
+            <textarea id="message" name="message" required
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline h-32 bg-transparent"></textarea>
+          </div>
+          <div class="flex items-center justify-center">
+            <input type="submit" value="Submit"
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" />
+          </div>
+        </form>
+      </div>
+      <div class="relative w-full h-64 sm:h-96 md:h-full md:order-first"> 
+       <img src="/images/parkinglights.gif" alt="mobile car mechanics near me
+       " class="w-full h-full object-fill rounded-lg shadow-lg">
+       <div class="absolute inset-0 flex items-center justify-center text-4xl font-bold text-white bg-black bg-opacity-50 rounded-lg">
+          SD Motors
+        </div>
+      </div>
+    </div>
+  </section>
+<!--Footer-->
+<div class="bg-gray-900 text-white hiddens">
+    <div class="container mx-auto py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center md:text-left">
+      <div>
+        <h3 class="text-xl font-bold mb-4">SD MOTORS</h3>
+        <p class="text-gray-400">Get quick service.</p>
+        <a href="#" >Book now</a>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+        <ul class="text-gray-400 space-y-2">
+          <li><a href="/" class="hover:text-white">Home</a></li>
+          
+          <li><a href="/info.html" class="hover:text-white">About</a></li>
+          <li><a href="/contact.html" class="hover:text-white">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+        <p class="text-gray-400">Plot no ,659/f, opp. kwikies, Kapra, Hyderabad, Telangana 500062</p>
+        <p class="text-gray-400">Email: info@sdmordersworkshop.com.com</p>
+        <p class="text-gray-400">Phone: +91 9963088878</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+        <div class="flex justify-center space-x-4">
+          <a href="#"><i class="fab fa-facebook text-2xl"></i></a>
+          <a href="#"><i class="fab fa-twitter text-2xl"></i></a>
+          <a href="#"><i class="fab fa-instagram text-2xl"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="text-center py-4 border-t border-gray-800">
+      <p class="text-gray-500 text-sm md:text-base">&copy; 2023 SD Motors. Developed by Abishek N. All rights reserved.</p>
+    </div>
+  </div>
+<!--whats app hover effect:-->
+
+<div class="">
+  <a href="https://wa.me/9963088878" target="_blank" style="position: fixed; bottom: 20px; right: 20px; opacity: 0; transition: opacity 1s ease-in-out; /* Add transition for smooth fade-in */">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/512px-WhatsApp.svg.png" alt="WhatsApp Icon" style="width: 60px; height: 60px;">
+  </a>
+</div>
+
+<!--whats app icon-->
+<script>
+  // Wait for 20 seconds (20000 milliseconds) before showing the icon
+  setTimeout(function() {
+    const whatsappIcon = document.querySelector('a[href*="wa.me"]');
+    whatsappIcon.style.opacity = 1; // Make the icon visible after 20 seconds
+  }, 5000);
+</script>
+
+  <script>document.getElementById('hamburger-btn').addEventListener('click', () => {
+    document.getElementById('sidebar').classList.remove('translate-x-full');
+  });
+  
+  document.getElementById('close-btn').addEventListener('click', () => {
+    document.getElementById('sidebar').classList.add('translate-x-full');
+  });
+  
+
+  </script>
+<!--load on scroll script-->
+<script src="/js/loadonscrool.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const hamburgerBtn = document.getElementById('hamburger-btn');
+          const menu = document.getElementById('menu');
+    
+          hamburgerBtn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+          });
+        });
+      </script>
+    <script src="app.js"></script>
+    
+</body>
+</html>

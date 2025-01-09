@@ -1,0 +1,98 @@
+.particle-container {
+    z-index: 1; /* Ensure particles are above the video */
+  }
+
+  .particle {
+    opacity: 0; /* Initially hide particles */
+    animation-duration: 10s; /* Adjust animation duration as needed */
+    animation-timing-function: linear; /* Use linear for smooth movement */
+    animation-iteration-count: infinite; /* Make animation loop infinitely */
+  }
+
+  .animate-particle-one {
+    animation-name: particleAnimationOne;
+  }
+
+  .animate-particle-two {
+    animation-name: particleAnimationTwo;
+  }
+
+  .animate-particle-three {
+    animation-name: particleAnimationThree;
+  }
+
+  .animate-particle-four {
+    animation-name: particleAnimationFour;
+  }
+
+  @keyframes particleAnimationOne {
+    0% {
+      top: -5%;
+      left: 10%;
+      opacity: 0;
+    }
+    50% {
+      top: 50%;
+      left: 60%;
+      opacity: 1;
+    }
+    100% {
+      top: 105%;
+      left: 90%;
+      opacity: 0;
+    }
+  }
+
+  @keyframes particleAnimationTwo {
+    0% {
+      top: 90%;
+      left: 20%;
+      opacity: 0;
+    }
+    50% {
+      top: 30%;
+      left: 70%;
+      opacity: 1;
+    }
+    100% {
+      top: -5%;
+      left: 40%;
+      opacity: 0;
+    }
+  }
+
+  @keyframes particleAnimationThree {
+    0% {
+      top: 20%;
+      left: -5%;
+      opacity: 0;
+    }
+    50% {
+      top: 70%;
+      left: 40%;
+      opacity: 1;
+    }
+    100% {
+      top: 60%;
+      left: 95%;
+      opacity: 0;
+    }
+  }
+
+  @keyframes particleAnimationFour {
+    0% {
+      top: 70%;
+      left: 80%;
+      opacity: 0;
+    }
+    50% {
+      top: 10%;
+      left: 30%;
+      opacity: 1;
+    }
+    100% {
+      top: -5%;
+      left: 5%;
+      opacity: 0;
+    }
+  }
